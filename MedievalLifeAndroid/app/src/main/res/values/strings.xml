@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Medieval Life</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="appName">Medieval Life</string>
+    <string name="appNameContent">Medieval\nLife</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="appTitle">Medieval Life</string>
+</resources>

@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="demosoft.com.medievallife.FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:theme="@android:style/Theme.NoTitleBar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/appTitle"
+            android:textSize="45dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/textView" />
+            android:id="@+id/textView" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resume"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/sword_button_resume"
+            android:background="@drawable/sword_default"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/sword_button_reg"
+            android:background="@drawable/sword_default"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/sword_button_exist"
+            android:background="@drawable/sword_default"/>
+    </LinearLayout>
+</FrameLayout>
