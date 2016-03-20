@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c74f563-b48d-4286-9c4c-d0e74aed6a86" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/demosoft/medievallife/server/controller/ProfileController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/demosoft/medievallife/server/service/ProfileService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/demosoft/medievallife/server/service/SessionService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/demosoft/medievallife/server/service/entity/ProfileServiceResult.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/demosoft/medievallife/server/controller/RegistrationController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MedievalLifeAndroid/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MedievalLifeAndroid/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../MedievalLifeAndroid/app/src/main/res/drawable/sword_clicked.png" afterPath="$PROJECT_DIR$/../MedievalLifeAndroid/app/src/main/res/drawable/sword_clicked_olf.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../MedievalLifeAndroid/app/src/main/res/drawable/sword_default.png" afterPath="$PROJECT_DIR$/../MedievalLifeAndroid/app/src/main/res/drawable/sword_default_old.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MedievalLifeAndroid/app/src/main/res/drawable/sword_clicked.png" afterPath="$PROJECT_DIR$/../MedievalLifeAndroid/app/src/main/res/drawable/sword_clicked.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MedievalLifeAndroid/app/src/main/res/drawable/sword_default.png" afterPath="$PROJECT_DIR$/../MedievalLifeAndroid/app/src/main/res/drawable/sword_default.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MedievalLifeAndroid/.idea/.name" afterPath="$PROJECT_DIR$/../MedievalLifeAndroid/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MedievalLifeAndroid/.idea/modules.xml" afterPath="$PROJECT_DIR$/../MedievalLifeAndroid/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MedievalLifeAndroid/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../MedievalLifeAndroid/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MedievalLifeAndroid/app/src/main/java/demosoft/com/medievallife/controller/MainMenuController.java" afterPath="$PROJECT_DIR$/../MedievalLifeAndroid/app/src/main/java/demosoft/com/medievallife/controller/MainMenuController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MedievalLifeAndroid/app/src/main/res/layout/activity_fullscreen.xml" afterPath="$PROJECT_DIR$/../MedievalLifeAndroid/app/src/main/res/layout/activity_fullscreen.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/demosoft/medievallife/server/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/demosoft/medievallife/server/entity/User.java" />
     </list>
     <ignored path="MedievalLifeAndroidServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -930,6 +934,13 @@
       <option name="number" value="Default" />
       <updated>1458485263669</updated>
     </task>
+    <task id="LOCAL-00001" summary="Login and registration">
+      <created>1458491749313</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1458491749313</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -962,6 +973,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Login and registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login and registration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -18,6 +18,6 @@ import demosoft.com.medievallife.module.MainModule;
 public interface MainComponent {
 
     void inject(FullscreenActivity activity);
-    //MainMenuController getMainMenuController();
-   // Activity getActivity();
+    void inject(MainMenuController mainMenuController);
+
 }

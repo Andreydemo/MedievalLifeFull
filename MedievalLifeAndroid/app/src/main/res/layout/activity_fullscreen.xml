@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Resume"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#ffffffff"
             android:textStyle="bold"
             android:textSize="20dp"
             android:id="@+id/sword_button_resume"
@@ -44,17 +44,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Registration"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#ffffffff"
             android:textStyle="bold"
             android:textSize="20dp"
             android:id="@+id/sword_button_reg"
             android:background="@drawable/sword_default"/>
 
         <Button
+            android:id="@+id/sword_button_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sword_default"
+            android:text="Settings"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Exit"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#ffffffff"
             android:textStyle="bold"
             android:textSize="20dp"
             android:id="@+id/sword_button_exist"

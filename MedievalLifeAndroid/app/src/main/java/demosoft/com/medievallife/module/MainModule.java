@@ -8,7 +8,9 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import demosoft.com.medievallife.FullscreenActivity;
+import demosoft.com.medievallife.component.DaggerMainComponent;
 import demosoft.com.medievallife.controller.MainMenuController;
+import demosoft.com.medievallife.service.NavigationService;
 
 /**
  * Created by demos_000 on 19.03.2016.
@@ -16,15 +18,23 @@ import demosoft.com.medievallife.controller.MainMenuController;
 @Module
 public class MainModule {
 
-    @Singleton @Provides
-    MainMenuController getMainMenuController(FullscreenActivity activity){
-        Log.i("->>>>>>>","getMainMenuController(Activity activity)"+activity + " " + new MainMenuController(activity));
-        return new MainMenuController(activity);
+    @Singleton
+    @Provides
+    MainMenuController getMainMenuController(FullscreenActivity activity) {
+        MainMenuController mainMenuController = new MainMenuController(activity);
+        activity.mainComponent.inject(mainMenuController);
+        return mainMenuController;
     }
 
-    @Singleton @Provides
-    FullscreenActivity getActivity(){
-        Log.i("->>>>>>>","getActivity()"+FullscreenActivity.instance);
+    @Singleton
+    @Provides
+    FullscreenActivity getActivity() {
         return FullscreenActivity.instance;
+    }
+
+    @Singleton
+    @Provides
+    NavigationService getNavigationService() {
+        return new NavigationService();
     }
 }
