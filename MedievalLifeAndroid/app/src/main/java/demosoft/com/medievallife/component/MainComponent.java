@@ -1,13 +1,12 @@
 package demosoft.com.medievallife.component;
 
-import android.app.Activity;
-
 import javax.inject.Singleton;
 
 import dagger.Component;
-import dagger.Provides;
-import demosoft.com.medievallife.FullscreenActivity;
+import demosoft.com.medievallife.MainMenuActivity;
+import demosoft.com.medievallife.SettingsActivity;
 import demosoft.com.medievallife.controller.MainMenuController;
+import demosoft.com.medievallife.controller.SettingsController;
 import demosoft.com.medievallife.module.MainModule;
 
 /**
@@ -17,7 +16,9 @@ import demosoft.com.medievallife.module.MainModule;
 @Component(modules = MainModule.class)
 public interface MainComponent {
 
-    void inject(FullscreenActivity activity);
+    void inject(MainMenuActivity activity);
     void inject(MainMenuController mainMenuController);
+    void inject(SettingsActivity mainMenuController);
+    void inject(SettingsController mainMenuController);
 
 }

@@ -1,32 +1,33 @@
 package demosoft.com.medievallife.service;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.util.Log;
-import android.view.ViewGroup;
 
 import java.util.Stack;
 
-import demosoft.com.medievallife.FullscreenActivity;
+import demosoft.com.medievallife.MainMenuActivity;
 
 /**
  * Created by demos_000 on 20.03.2016.
  */
 public class NavigationService {
 
-    private Stack<Integer> pageCallStack = new Stack<>();
+    private Stack<Activity> pageCallStack = new Stack<>();
 
     public NavigationService() {
         Log.i("NavigationService", "created");
     }
 
-    public void openPage(int pageId, FullscreenActivity activity) {
-        pageCallStack.push(activity.getCurrentContentViewId());
-        activity.setContentView(pageId);
+    public void openPage(Class<?> targetActivity, MainMenuActivity sourceActivity) {
+        pageCallStack.push(sourceActivity);
+        sourceActivity.startActivity(new Intent(sourceActivity, targetActivity));
     }
 
-    public void backToPreviousPage(FullscreenActivity activity) {
+    public void backToPreviousPage(Activity sourceActivity) {
         if (!pageCallStack.isEmpty()) {
-            activity.setContentView(pageCallStack.pop());
+            Activity activity = pageCallStack.pop();
+            sourceActivity.startActivity(new Intent(sourceActivity, activity.getClass()));
         }
     }
 }

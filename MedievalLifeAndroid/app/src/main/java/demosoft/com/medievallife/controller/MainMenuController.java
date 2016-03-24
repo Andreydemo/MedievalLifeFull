@@ -1,6 +1,5 @@
 package demosoft.com.medievallife.controller;
 
-import android.app.Activity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -11,8 +10,9 @@ import javax.inject.Inject;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.OnTouch;
-import demosoft.com.medievallife.FullscreenActivity;
+import demosoft.com.medievallife.MainMenuActivity;
 import demosoft.com.medievallife.R;
+import demosoft.com.medievallife.SettingsActivity;
 import demosoft.com.medievallife.service.ConnectionService;
 import demosoft.com.medievallife.service.NavigationService;
 
@@ -23,13 +23,13 @@ import demosoft.com.medievallife.service.NavigationService;
 public class MainMenuController {
 
 
-    FullscreenActivity activity;
+    MainMenuActivity activity;
 
     @Inject
     public NavigationService navigationService;
 
 
-    public MainMenuController(FullscreenActivity activity) {
+    public MainMenuController(MainMenuActivity activity) {
         Log.i("MainMenuController", "Created," + activity);
         this.activity = activity;
         ButterKnife.bind(this, activity);
@@ -50,7 +50,7 @@ public class MainMenuController {
         return false;
     }
 
-    @OnTouch(R.id.sword_button_reg)
+//    @OnTouch(R.id.sword_button_reg)
     public boolean sword_button_regOnTouch(View v, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
 
@@ -67,7 +67,7 @@ public class MainMenuController {
     @OnClick(R.id.sword_button_reg)
     public void sword_button_regOnClick(View v) {
         //activity.setContentView(R.layout.registration);
-        navigationService.openPage(R.layout.registration,activity);
+        // navigationService.openPage(R.layout.registration,activity);
     }
 
     @OnTouch(R.id.sword_button_exist)
@@ -105,11 +105,11 @@ public class MainMenuController {
 
     @OnClick(R.id.sword_button_settings)
     public void sword_button_settingsOnClick(View v) {
-       // activity.setContentView(R.layout.settings);
-        navigationService.openPage(R.layout.settings, activity);
-        EditText serverHost = (EditText) activity.findViewById(R.id.server_host);
-        serverHost.setText(ConnectionService.serverHost);
-        EditText serverPort = (EditText) activity.findViewById(R.id.server_port);
-        serverPort.setText(ConnectionService.serverPort);
+        // activity.setContentView(R.layout.settings);
+        navigationService.openPage(SettingsActivity.class, activity);
+       // EditText serverHost = (EditText) activity.findViewById(R.id.server_host);
+       // serverHost.setText(ConnectionService.serverHost);
+        //EditText serverPort = (EditText) activity.findViewById(R.id.server_port);
+        //serverPort.setText(ConnectionService.serverPort);
     }
 }
