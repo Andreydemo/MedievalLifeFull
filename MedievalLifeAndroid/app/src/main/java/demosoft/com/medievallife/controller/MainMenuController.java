@@ -10,6 +10,7 @@ import javax.inject.Inject;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.OnTouch;
+import demosoft.com.medievallife.MainActivity;
 import demosoft.com.medievallife.MainMenuActivity;
 import demosoft.com.medievallife.R;
 import demosoft.com.medievallife.SettingsActivity;
@@ -50,7 +51,7 @@ public class MainMenuController {
         return false;
     }
 
-//    @OnTouch(R.id.sword_button_reg)
+    @OnTouch(R.id.sword_button_reg)
     public boolean sword_button_regOnTouch(View v, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
 
@@ -66,6 +67,7 @@ public class MainMenuController {
 
     @OnClick(R.id.sword_button_reg)
     public void sword_button_regOnClick(View v) {
+        navigationService.openPage(MainActivity.class,activity);
         //activity.setContentView(R.layout.registration);
         // navigationService.openPage(R.layout.registration,activity);
     }

@@ -2,6 +2,7 @@ package demosoft.com.medievallife;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
@@ -16,7 +17,7 @@ import demosoft.com.medievallife.controller.SettingsController;
 import demosoft.com.medievallife.service.ConnectionService;
 import demosoft.com.medievallife.service.NavigationService;
 
-public class SettingsActivity extends Activity {
+public class SettingsActivity extends AppCompatActivity {
 
     public static SettingsActivity instance;
     private int currentContentViewId;

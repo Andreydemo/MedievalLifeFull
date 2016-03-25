@@ -2,6 +2,7 @@ package demosoft.com.medievallife;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
@@ -13,7 +14,7 @@ import demosoft.com.medievallife.component.MainComponent;
 import demosoft.com.medievallife.controller.MainMenuController;
 import demosoft.com.medievallife.service.NavigationService;
 
-public class MainMenuActivity extends Activity {
+public class MainMenuActivity extends AppCompatActivity {
 
     public static MainComponent mainComponent;
     public static MainMenuActivity instance;
